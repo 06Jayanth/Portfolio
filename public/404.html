@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jayanth Vishwakarma G — Portfolio</title>
+    <script>
+      // Single Page Application redirect for GitHub Pages
+      // Converts 404 path requests into hash routes for React HashRouter
+      (function () {
+        var path = window.location.pathname;
+        var search = window.location.search || '';
+        var hash = window.location.hash || '';
+        
+        // Find repo subpath if hosted at username.github.io/repo-name/
+        var segments = path.split('/').filter(Boolean);
+        var repoName = '';
+        var routePath = path;
+
+        // If hosted on github.io and has repo path segment
+        if (window.location.hostname.endsWith('github.io') && segments.length > 0) {
+          repoName = '/' + segments[0];
+          routePath = '/' + segments.slice(1).join('/');
+        }
+
+        var targetUrl = window.location.origin + repoName + '/#' + routePath + search + hash;
+        window.location.replace(targetUrl);
+      })();
+    </script>
+  </head>
+  <body>
+    <p style="font-family: sans-serif; text-align: center; margin-top: 50px; color: #64748b;">
+      Redirecting to portfolio...
+    </p>
+  </body>
+</html>

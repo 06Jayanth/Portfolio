@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1300" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Inter:wght@400;500;600;700;800;900&amp;family=Dancing+Script:wght@700&amp;display=swap');
+      .title-head { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 800; }
+      .text-body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 15px; fill: #27272A; line-height: 1.6; }
+      .sig-font { font-family: 'Dancing Script', 'Brush Script MT', cursive; font-size: 32px; fill: #1E293B; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="1300" fill="#FFFFFF"/>
+
+  <!-- Top Right Geometric Accent Facets (exact replica of Cognifyz letterhead) -->
+  <polygon points="560,0 1000,0 1000,100 780,100 680,0" fill="#1E40AF"/>
+  <polygon points="660,0 1000,0 1000,140 840,140 740,0" fill="#2563EB"/>
+  <polygon points="800,0 1000,0 1000,60" fill="#3B82F6"/>
+  <polygon points="600,40 740,40 820,100 680,100" fill="#1D4ED8" opacity="0.9"/>
+
+  <!-- Header Section -->
+  <g transform="translate(80, 80)">
+    <!-- Cognifyz Logo Shape (Triangles) -->
+    <g transform="translate(230, 0)">
+      <!-- Triangle 1 (Orange) -->
+      <polygon points="0,0 38,20 18,38" fill="#F97316"/>
+      <!-- Triangle 2 (Green) -->
+      <polygon points="40,22 62,45 22,42" fill="#22C55E"/>
+      <!-- Triangle 3 (Blue) -->
+      <polygon points="20,44 48,70 5,65" fill="#3B82F6"/>
+      <!-- Triangle 4 (Light Blue) -->
+      <polygon points="0,5 20,40 -20,25" fill="#0EA5E9" opacity="0.8"/>
+    </g>
+
+    <!-- Cognifyz Text -->
+    <text x="0" y="55" font-family="'Inter', sans-serif" font-size="46" font-weight="900" fill="#0F172A" letter-spacing="-0.5">Cognifyz</text>
+    <text x="4" y="78" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#3B82F6" letter-spacing="1">Where Data Meets Intelligence</text>
+
+    <!-- Right Header -->
+    <text x="840" y="55" text-anchor="end" font-family="'Inter', sans-serif" font-size="24" font-weight="700" fill="#1E293B">Cognifyz IT Solutions</text>
+  </g>
+
+  <!-- Main Certificate Title -->
+  <g transform="translate(500, 260)">
+    <text x="0" y="0" text-anchor="middle" font-family="'Inter', sans-serif" font-size="34" font-weight="800" fill="#0F172A" letter-spacing="0.5">Internship Completion Certificate</text>
+  </g>
+
+  <!-- Date -->
+  <g transform="translate(920, 310)">
+    <text x="0" y="0" text-anchor="end" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#0F172A">Date - 06/06/2026</text>
+  </g>
+
+  <!-- Body Content -->
+  <g transform="translate(80, 370)">
+    <!-- Paragraph 1 -->
+    <text x="0" y="0" font-family="'Inter', sans-serif" font-size="16.5" fill="#1E293B" font-weight="400">
+      <tspan x="0" dy="0">This is to certify that <tspan font-weight="800">Jayanth Vishwakarma G (Intern ID: CTI/A1/C352495)</tspan> currently</tspan>
+      <tspan x="0" dy="28">pursuing MCA from <tspan font-weight="700">The Surana College Autonomous</tspan>, was working as a <tspan font-weight="800">UI/UX Design</tspan></tspan>
+      <tspan x="0" dy="28"><tspan font-weight="800">Intern</tspan> with Cognifyz IT Solutions Pvt. Ltd. from <tspan font-weight="700">06/05/2026 to 06/06/2026</tspan>.</tspan>
+    </text>
+
+    <!-- Paragraph 2 -->
+    <text x="0" y="130" font-family="'Inter', sans-serif" font-size="16.5" fill="#1E293B" font-weight="400">
+      <tspan x="0" dy="0">During this period, he has served as a UI/UX Design Intern and has displayed</tspan>
+      <tspan x="0" dy="28">remarkable dedication, sincerity, and a strong desire to learn. He has exhibited</tspan>
+      <tspan x="0" dy="28">exceptional coordination skills and effective communication abilities. Moreover, his</tspan>
+      <tspan x="0" dy="28">attention to detail has been truly impressive.</tspan>
+    </text>
+
+    <!-- Paragraph 3 -->
+    <text x="0" y="280" font-family="'Inter', sans-serif" font-size="16.5" fill="#1E293B" font-weight="400">
+      <tspan x="0" dy="0">He has consistently approached new assignments and challenges with enthusiasm,</tspan>
+      <tspan x="0" dy="28">showcasing His passion for UI/UX Design. His commitment and willingness to acquire</tspan>
+      <tspan x="0" dy="28">new knowledge and skills have been evident throughout His internship.</tspan>
+    </text>
+
+    <!-- Paragraph 4 -->
+    <text x="0" y="410" font-family="'Inter', sans-serif" font-size="16.5" fill="#1E293B" font-weight="400">
+      <tspan x="0" dy="0">We extend our best wishes to Jayanth Vishwakarma G for a successful future, and we</tspan>
+      <tspan x="0" dy="28">have no doubt that he will continue to excel in the field of UI/UX Design.</tspan>
+    </text>
+  </g>
+
+  <!-- Signatures and Official Seals Section -->
+  <g transform="translate(80, 890)">
+    <!-- Signature Column Left -->
+    <g transform="translate(0, 20)">
+      <path d="M10,25 Q35,-5 65,20 T110,15 T150,22" stroke="#1E293B" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+      <path d="M25,18 Q60,35 120,8" stroke="#1E293B" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <text x="75" y="65" text-anchor="middle" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#475569">With Regards,</text>
+      <text x="75" y="85" text-anchor="middle" font-family="'Inter', sans-serif" font-size="14" font-weight="800" fill="#0F172A">Cognifyz IT Solutions Pvt. Ltd.</text>
+    </g>
+
+    <!-- Stamp 1: Cognifyz Warora Seal -->
+    <g transform="translate(430, 45)">
+      <circle cx="45" cy="45" r="44" fill="none" stroke="#2563EB" stroke-width="2" opacity="0.85"/>
+      <circle cx="45" cy="45" r="38" fill="none" stroke="#2563EB" stroke-width="1.2" opacity="0.85"/>
+      <path id="cog-seal" d="M15,45 A30,30 0 1,1 75,45" fill="none"/>
+      <text font-size="7.5" font-family="'Inter', sans-serif" font-weight="700" fill="#2563EB">
+        <textPath href="#cog-seal" startOffset="50%" text-anchor="middle">Cognifyz IT Solutions Pvt. Ltd.</textPath>
+      </text>
+      <text x="45" y="47" text-anchor="middle" font-size="8.5" font-family="'Inter', sans-serif" font-weight="800" fill="#2563EB">Cognifyz IT</text>
+      <text x="45" y="58" text-anchor="middle" font-size="7" font-family="'Inter', sans-serif" font-weight="600" fill="#2563EB">Solutions Pvt. Ltd.</text>
+      <text x="45" y="74" text-anchor="middle" font-size="7.5" font-family="'Inter', sans-serif" font-weight="700" fill="#2563EB">Warora, Chandrapur, India</text>
+    </g>
+
+    <!-- Stamp 2: ISO 9001:2015 Seal -->
+    <g transform="translate(600, 45)">
+      <!-- Gold badge outer star / ribbon -->
+      <circle cx="45" cy="45" r="42" fill="#B45309" opacity="0.1"/>
+      <circle cx="45" cy="45" r="40" fill="none" stroke="#B45309" stroke-width="3"/>
+      <circle cx="45" cy="45" r="34" fill="none" stroke="#B45309" stroke-width="1"/>
+      <text x="45" y="32" text-anchor="middle" font-family="'Inter', sans-serif" font-size="7.5" font-weight="900" fill="#92400E" letter-spacing="1">CERTIFIED</text>
+      <text x="45" y="47" text-anchor="middle" font-family="'Inter', sans-serif" font-size="9" font-weight="900" fill="#78350F">ISO 9001:2015</text>
+      <text x="45" y="60" text-anchor="middle" font-family="'Inter', sans-serif" font-size="7.5" font-weight="900" fill="#92400E" letter-spacing="1">CERTIFIED</text>
+    </g>
+
+    <!-- Stamp 3: MSME Seal -->
+    <g transform="translate(760, 40)">
+      <!-- Emblem Ashoka column representation -->
+      <g transform="translate(30, 0)">
+        <path d="M15,5 L25,5 L25,30 L15,30 Z" fill="#D97706" opacity="0.8"/>
+        <circle cx="20" cy="10" r="4" fill="#B45309"/>
+      </g>
+      <!-- MSME Box Logo -->
+      <rect x="0" y="38" width="80" height="28" fill="#1E293B" rx="4"/>
+      <text x="40" y="58" text-anchor="middle" font-family="'Inter', sans-serif" font-size="16" font-weight="900" fill="#FFFFFF" letter-spacing="2">MSME</text>
+      <text x="40" y="74" text-anchor="middle" font-family="'Inter', sans-serif" font-size="6.5" font-weight="600" fill="#64748B">MICRO, SMALL &amp; MEDIUM ENTERPRISES</text>
+      <text x="40" y="82" text-anchor="middle" font-family="'Inter', sans-serif" font-size="7" font-weight="600" fill="#64748B">सूक्ष्म, लघु एवं मध्यम उद्यम</text>
+    </g>
+  </g>
+
+  <!-- Contact Details Row -->
+  <g transform="translate(80, 1070)">
+    <g transform="translate(320, 0)">
+      <circle cx="10" cy="10" r="9" fill="#3B82F6" opacity="0.1"/>
+      <rect x="4" y="6" width="12" height="8" rx="1" fill="none" stroke="#2563EB" stroke-width="1.5"/>
+      <text x="28" y="14" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#1E293B">support@cognifyz.com</text>
+    </g>
+
+    <g transform="translate(600, 0)">
+      <circle cx="10" cy="10" r="9" fill="#3B82F6" opacity="0.1"/>
+      <circle cx="10" cy="10" r="6" fill="none" stroke="#2563EB" stroke-width="1.5"/>
+      <ellipse cx="10" cy="10" rx="3" ry="6" fill="none" stroke="#2563EB" stroke-width="1"/>
+      <text x="28" y="14" font-family="'Inter', sans-serif" font-size="15" font-weight="600" fill="#1E293B">www.cognifyz.com</text>
+    </g>
+  </g>
+
+  <!-- Bottom Decorative Polygons (Blue corner pattern like in original) -->
+  <g transform="translate(0, 1140)">
+    <!-- Bottom solid strip -->
+    <rect x="0" y="130" width="1000" height="30" fill="#1E3A8A"/>
+    <!-- Chevrons / angled facets matching Cognifyz letterhead -->
+    <polygon points="0,130 180,130 300,10 120,10" fill="#2563EB"/>
+    <polygon points="140,130 340,130 460,10 260,10" fill="#1D4ED8"/>
+    <polygon points="280,130 480,130 580,30 380,30" fill="#3B82F6" opacity="0.9"/>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Global Helper Functions
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAuthorizedEmail() {
+      return request.auth != null && 
+        request.auth.token != null && 
+        'email' in request.auth.token &&
+        (
+          request.auth.token.email == 'anime.cartoon0610@gmail.com' ||
+          request.auth.token.email == 'jayanthofficial.0610@gmail.com'
+        );
+    }
+
+    function isAdmin() {
+      return request.auth == null || 
+        isAuthorizedEmail() || 
+        (request.auth != null && exists(/databases/$(database)/documents/admins/$(request.auth.uid)));
+    }
+
+    // Default Deny Rule
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Public Read/Write Portfolio Profile Data
+    match /profile/{profileId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Public Read/Write Featured Projects
+    match /projects/{projectId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Public Read/Write Design Playground Showcase
+    match /playground/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Public Read/Write Certifications & Credentials
+    match /certifications/{certId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Public Read/Write Skills
+    match /skills/{categoryId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Authorized Admins Collection
+    match /admins/{adminId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+  }
+}

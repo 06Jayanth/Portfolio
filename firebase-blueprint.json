@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "Profile": {
+      "title": "Profile",
+      "description": "Public portfolio profile and contact information",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "shortBio": { "type": "string" },
+        "fullBio": { "type": "string" },
+        "designPhilosophy": { "type": "string" },
+        "email": { "type": "string" },
+        "phone": { "type": "string" },
+        "linkedin": { "type": "string" },
+        "github": { "type": "string" },
+        "figma": { "type": "string" },
+        "twitter": { "type": "string" },
+        "dribbble": { "type": "string" },
+        "behance": { "type": "string" },
+        "location": { "type": "string" },
+        "status": { "type": "string" },
+        "experienceYears": { "type": "string" }
+      },
+      "required": ["name", "title", "shortBio", "email", "location", "status"]
+    },
+    "Project": {
+      "title": "Project",
+      "description": "Featured portfolio UI/UX design project with case study",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "tagline": { "type": "string" },
+        "category": { "type": "string" },
+        "platform": { "type": "string" },
+        "role": { "type": "string" },
+        "duration": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "figmaPrototypeUrl": { "type": "string" },
+        "overview": { "type": "string" },
+        "problemStatement": { "type": "string" },
+        "designObjective": { "type": "string" }
+      },
+      "required": ["id", "title", "category", "platform", "thumbnail", "figmaPrototypeUrl"]
+    },
+    "PlaygroundItem": {
+      "title": "PlaygroundItem",
+      "description": "Interactive micro-interaction and design experiment showcase",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "image": { "type": "string" },
+        "figmaFrame": { "type": "string" },
+        "date": { "type": "string" },
+        "color": { "type": "string" }
+      },
+      "required": ["id", "title", "category", "description", "image", "figmaFrame"]
+    },
+    "Certification": {
+      "title": "Certification",
+      "description": "Professional UI/UX and industry credentials",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "issuer": { "type": "string" },
+        "date": { "type": "string" },
+        "description": { "type": "string" },
+        "credentialUrl": { "type": "string" },
+        "image": { "type": "string" }
+      },
+      "required": ["id", "title", "issuer", "date"]
+    },
+    "SkillCategory": {
+      "title": "SkillCategory",
+      "description": "Grouped design competencies and tooling skills",
+      "type": "object",
+      "properties": {
+        "category": { "type": "string" },
+        "description": { "type": "string" }
+      },
+      "required": ["category", "description"]
+    },
+    "AdminUser": {
+      "title": "AdminUser",
+      "description": "Authorized portfolio administrator",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "role": { "type": "string" }
+      },
+      "required": ["email", "role"]
+    }
+  },
+  "firestore": {
+    "/profile/{profileId}": {
+      "schema": "Profile",
+      "description": "Public read, owner write portfolio profile"
+    },
+    "/projects/{projectId}": {
+      "schema": "Project",
+      "description": "Public read, owner write UI/UX projects"
+    },
+    "/playground/{itemId}": {
+      "schema": "PlaygroundItem",
+      "description": "Public read, owner write design playground showcase items"
+    },
+    "/certifications/{certId}": {
+      "schema": "Certification",
+      "description": "Public read, owner write credentials and certifications"
+    },
+    "/skills/{categoryId}": {
+      "schema": "SkillCategory",
+      "description": "Public read, owner write design skills categories"
+    },
+    "/admins/{adminId}": {
+      "schema": "AdminUser",
+      "description": "Authenticated admin user records"
+    }
+  }
+}
